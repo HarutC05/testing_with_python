@@ -9,7 +9,7 @@ class Robot:
         return self
 
     def say_name(self):
-        if self.battery >= 0:
+        if self.battery > 0:
             self.battery -= 1
             return f"BEEP BOOP BEEP BOOP. I AM {self.name.upper()}"
         return "Low power. Please charge and try again"
